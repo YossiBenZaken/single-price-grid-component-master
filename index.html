@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --light-gray: hsl(204, 43%, 93%);
+      --cyan: hsl(179, 62%, 43%);
+      --off-cyan: hsla(179, 62%, 43%, 0.699);
+      --bright-yellow: hsl(71, 73%, 54%);
+      --grayish-blue: hsl(218, 22%, 67%);
+    }
+
+    * {
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      font-size: 11px;
+      color: hsl(228, 45%, 44%);
+    }
+
+    .cyan {
+      color: var(--cyan);
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .yellow {
+      color: var(--bright-yellow);
+    }
+
+    .gray {
+      color: var(--grayish-blue)
+    }
+
+    body {
+      background-color: var(--light-gray);
+    }
+
+    @media(max-width: 375px) {
+      .background-blue-light {
+        border-bottom-left-radius: 0 !important;
+      }
+
+      .background-blue {
+        border-bottom-left-radius: .25rem;
+      }
+    }
+
+    .background-blue {
+      background-color: var(--off-cyan);
+      border-bottom-right-radius: .25rem;
+    }
+
+    .background-blue-light {
+      background-color: var(--cyan);
+      border-bottom-left-radius: .25rem;
+    }
+
+    .background-yellow {
+      background-color: var(--bright-yellow);
+    }
+
+    .container-f {
+      background-color: white;
+      border-radius: .25rem;
+      width: 600px;
+      padding: 20px 20px 0 20px;
+      margin: 0 20px;
+    }
+
+    .off-cyan {
+      color: hsl(178.7, 46.8%, 60.2%);
+    }
+
+    .row {
+      margin: 0 -20px !important;
+    }
+
+    .price {
+      font-size: 150%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+    .body-text {
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center mt-5" style="height: 90vh;">
+    <div class="container-f shadow">
+      <div class="row">
+        <div class="col mb-4 pl-4">
+          <div class="cyan bold mb-2">
+            Join our community
+          </div>
+          <div class="yellow bold mb-1">
+            30-day, hassle-free money back guarantee
+          </div>
+          <div class="gray">
+            Gain access to our full library of tutorials along with expert code reviews.
+            Perfect for any developers who are serious about honing their skills.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 background-blue-light text-white pb-5 pl-4 pr-4">
+          <div class="bold mt-5">
+            Monthly Subscription
+          </div>
+          <div class="mt-2">
+            <span class="price bold">&dollar;29</span>
+            <span class="off-cyan">per month</span>
+          </div>
+
+          Full access for less than &dollar;1 a day
+
+          <button class="btn shadow-sm text-white background-yellow mt-4">
+            Sign Up
+          </button>
+        </div>
+        <div class="col-sm-6 background-blue text-white pb-4 pl-5">
+          <div class="bold mt-5">
+            Why Us
+          </div>
+          <div class="mr-5 body-text">
+            Tutorials by industry experts
+            Peer &amp; expert code review
+            Coding exercises
+            Access to our GitHub repos
+            Community forum
+            Flashcard decks
+            New videos every week
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Yossi Ben Zaken</a>.
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
